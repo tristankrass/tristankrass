@@ -1,5 +1,6 @@
 ### Hi there 👋
 
+[![Linkedin Badge](https://img.shields.io/badge/-TristanKrass-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tristankrass//)](https://www.linkedin.com/in/tristankrass/)
 
 ![github stats](https://github-readme-stats.vercel.app/api?username=tristankrass&show_icons=true&count_private=true&hide_title=true)
 <!--
