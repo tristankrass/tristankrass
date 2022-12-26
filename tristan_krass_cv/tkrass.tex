@@ -1,0 +1,142 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\usepackage{hyperref}
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Tristan Krass}
+\tagline {I am a software engineer dedicated to building user-friendly products that create value for people. I am committed to continuous learning in order to constantly improve my skills and the products I build.}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{tristankrass@gmail.com}
+%   \phone{000-00-0000}
+%  \mailaddress{Address, Street, 00000 County}
+  % \location{Tallinn, Estonia}
+  \githubsymbol{\href{https://github.com/tristankrass}{tristankrass}}
+  \homepage{\href{https://tristan.ee}{tristan.ee}}
+%  \twitter{@marissamayer}
+  \linkedin{\href{https://www.linkedin.com/in/tristankrass/}{tristankrass}}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{}{Twilio - Software Engineer}{(Internship 2020 Summer), full time June 2021 - }{}
+\begin{itemize}
+\item Working on real time monitoring system for detecting network anomalies. Creating and maintaining systems that processed up to 55 thousand records a minute during the peak times.
+\smallskip
+\item Building internal tooling for operations. Collaborated closely with stakeholders and product manager to identify the most effective solution after thorough analysis and consideration of multiple options.
+\smallskip
+\item Successfully improved and maintained legacy systems, including a small rewrite of one system that resulted in significant cost savings.
+\smallskip
+\item Onboarding and training new engineers in tech, tools and process on our team.
+\smallskip
+\item Main technologies used - Scala, Spark, Akka, ZIO, TypeScript and React.
+\end{itemize}
+
+\divider
+
+\cvevent{}{Alvin.ai - Software Engineer}{Summer, 2019}{}
+\begin{itemize}
+\item As the first engineer at the startup (besides the founders), I played a critical role in working closely with the founders to identify the product-market fit and guide the company's technical direction. Despite operating under a tight schedule, I effectively contributed to the company's early success.
+\smallskip
+\item In close collaboration with the CTO, I played a key role in developing the MVP for the company. Specifically, I focused on building the SQL editor and the web platform for data analysts.
+\smallskip
+\item Main technologies used - TypeScript, React, NestJS, Firebase and GCP.
+\end{itemize}
+
+\divider
+
+\cvevent{}{Freelancing}{}{}
+\begin{itemize}
+\item Successfully led the full life cycle of multiple software development projects, including gathering requirements, building projects from start to finish independently, setting up CI/CD pipelines, managing servers, and effectively communicating with clients. These efforts resulted in high-quality, reliable software solutions that met the needs and expectations of clients.
+\end{itemize}
+
+
+\cvsection{Education}
+\cvevent{}{Tallinn University of Technology - IT Systems Development | Cum laude}{ 2018-2021}{}
+\begin{itemize}
+\item Served as a teaching assistant for a programming course in Python.
+\smallskip
+\item \href{https://www.geeksonwheels.eu/}{Geeks on Wheels} programming lab coordinator.
+\end{itemize}
+\cvevent{}{Old Town Educational College - Division of Math and Sciences}{ 2005 - 2017 }{}
+
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
